@@ -1,0 +1,4 @@
+#!/usr/bin/bash
+
+#bash /home/thelinuxguy/.config/polybar/blocks/scripts/launcher.sh
+bash /home/emkka/.config/polybar/forest/scripts/launcher.sh

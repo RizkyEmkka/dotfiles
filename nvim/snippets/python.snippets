@@ -1,0 +1,264 @@
+snippet m2o
+	${1:field_name} = fields.Many2one('${2:model_name}',string='${4:string_name}')
+snippet o2m
+	${1:field_name} = fields.One2many('${2:model_name}','${3:field_ref}',string='${4:string_name}')
+snippet m2m
+	${1:field_name} = fields.Many2many('${2:model_name}',${3:table_name},string='${4:string}')
+snippet foc
+	${1:field_name} = fields.Char('${2:string_name}')
+snippet foint
+	${1:field_name} = fields.Integer('${2:string_name}')
+snippet fob
+	${1:field_name} = fields.Boolean('${2:string_name}')
+snippet fof
+	${1:field_name} = fields.Float('${2:string_name}')
+snippet fod
+	${1:field_name} = fields.Date('${2:string_name}',default=fields.Date.today())
+snippet fodt
+	${1:field_name} = fields.Datetime('${2:string_name}',default=fields.Datetime.now())
+snippet fbin
+	${1:field_name} = fields.Binary('${2:string_name}')
+snippet fsel
+	${1:field_name} = fields.Selection(selection=[('${2:key}','${3:value_string}')])	
+snippet ifield
+	from odoo import _,api,models,fields
+snippet idp
+	from odoo.addons.decimal_precision as dp
+snippet start
+	# Copyright `date +%Y` Emkka (https://www.pengendaliapi.com).
+	# @author `git config user.name` <`git config user.email`>
+	# License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl).
+	${1}
+snippet log
+	import logging
+	_logger = logging.getLogger(__name__)
+snippet filter
+	filtered(lambda x:x.${1:field_condition})
+snippet doml
+	domain=lambda self:self.${1:method_name}()
+snippet defl
+	default=lambda self:self.${1:method_name}()
+snippet m2orel
+	${1:field_name} = fields.Many2one(related='${2:parent_id}.$1',string='${3:string}')
+snippet focrel
+	${1:field_name} = fields.Char(related='${2:parent_id}.$1',string='${3:string}')
+snippet fointrel
+	${1:field_name} = fields.Integer(related='${2:parent_id}.$1',string='${3:string}')
+snippet fobrel
+	${1:field_name} = fields.Boolean(related='${2:parent_id}.$1',string='${3:string}')
+snippet fofrel
+	${1:field_name} = fields.Float(related='${2:parent_id}.$1',string='${3:string}')
+snippet fodrel
+	${1:field_name} = fields.Date(related='${2:parent_id}.$1',string='${3:string}')
+snippet fodtrel	
+	${1:field_name} = fields.Datetime(related='${2:parent_id}.$1',string='${3:string}')
+snippet fselrel	
+	${1:field_name} = fields.Selection(related='${2:parent_id}.$1',string='${3:string}')
+snippet o2mrel	
+	${1:field_name} = fields.One2many(related='${2:parent_id}.$1',string='${3:string}')
+snippet m2mrel
+	${1:field_name} = fields.Many2many(related='${2:parent_id}.$1',string='${3:string}')
+snippet sort
+	sorted(lambda x:-.${1:field_order})
+snippet inrescon
+	from odoo import api,fields,models,_
+	from odoo.exceptions import UseError,ValidationError
+	from ast import literal_eval
+	import loggin.getLogger(__name__)
+
+	class ResConfigSettings(models.TransientModel):
+		_inherit= 'res.config.settings'
+		
+		${1:sequence_name} = fields.Many2one('ir.sequence',string=${1:sequence name})
+		
+
+		def get_values(self):
+			res = super(ResConfigSettings,self).get_values()
+			ir_config = self.env['ir.config_parameter'].sudo()
+			$1 = ir_config.get_param('$1')
+			return res
+		
+		def set_values(self):
+			res = super(ResConfigSettings,self).set_values()
+			ir_config = self.env['ir.config_parameter'].sudo()
+			ir_config.set_param('$1',self.$1.id)
+
+
+snippet chnull
+	precision_digits = self.env['decimal.precision'].precision_get('Product Unit of Meauser')
+	for line in self.line_ids:
+		if float_is_zero(line.quantity,precision_digits=precistion_digits):
+			raise UserError('%s ,Quantity tidak boleh nol'%(line.product_id.name))
+snippet imfloat
+	from odoo.float_utils import float_round,float_is_zero,float_compare,float_split_str,float_repr
+
+snippet imlit
+	from ast import literal_eval
+
+snippet seqcode
+	${1:variable} =  self.env['ir.sequence'].next_by_code(${2:folder_name}.${3:sequence_id})
+
+snippet seqid
+	${1:sequence_var} = self.sequence_id
+	name = self.env['ir.sequence'].browse($1).next_by_id()
+	
+snippet inewmodel
+	from odoo import models,fields,api,_
+	from odoo.exceptions import UserError,ValidationError
+	import logging
+	_logger = logging.getLogger(__name__)
+	
+
+	class ${1:class_name}(models.Model):
+		_name = '${2:model_name}'
+		_description = '${3:model_description}'
+		
+
+		name = fields.Char('$1')
+
+snippet inewwizard
+	from odoo import models,fields,api,_
+	from odoo.exceptions  import UserError,ValidationError
+	import logging
+	_logger = logging.getLogger(__name__)
+
+
+	class ${1:class_name}(models.TransientModel):
+		_name = '${2:model_name}'
+		_description = '${3:description}'
+
+
+		name = fields.Char('name')
+
+snippet hasgroup
+	self.env.user.has_group('${1:folder_name}.${2:group_name}')
+
+snippet readgroup
+	self.env['${1:model_name}'].read_group([('${2:field_name}'),'${3:operator}',${4:domain}],['${5:group_by}'],['${6:field_wanna_display}'])
+
+snippet repcalc
+	from odoo import models,fields,api,_
+	from odoo.exceptions impot UserError,ValidationError
+	import logging
+	_logging = logging.getLogger(__name__)
+
+
+	class ${1:class_name}(models.Model):
+		_name = '${2:model_name}'
+		_description = '${3:description}'
+
+
+		name = fields.Char($1)
+		line_ids = fields.One2Many('$5',string="Details")
+
+
+
+		def action_clear(self):
+			query = " DELETE FROM $2_line where report_id = %s"%(self.id)
+			self._cr.execute(query)
+
+
+		def calculate(self):
+			pass
+
+	class ${4:class_name}(models.Model):
+		_name = '${5:model_name}'
+		_description = '${6:description}'
+
+
+		report_id = fields.Many2one('$2',string='Report')
+
+snippet strtodate
+	fields.Date.to_date(${1:string_obj})
+
+snippet strtodatetime
+	fields.Datetime.to_datetime(${1:string_obj})
+
+snippet adddate
+	fields.Date.add(${1:date_object},months=${2:int})
+
+snippet adddatetime
+	fields.Datetime.add(${1:datetime_obj},hours=${2:int})
+
+snippet dependcont
+	@api.depends_context('${1:field_name}')
+
+snippet origin
+	self._origin.${1:field_name}
+	
+snippet return
+	@model
+	@returns('field_name')
+	def find_something(self,arg):
+		pass
+
+snippet round
+	fields.Float.round(self.${1:float_field},precision_rounding=self.${2:uom_field}.rounding)
+
+snippet iszero
+	fields.Float.is_zero(self.${1:float_field},precision_rounding=self.${2:uom_field}.rounding)
+
+snippet compare
+	fields.Float.compare(self.${1:float_field},${2:float_field},precision_rounding=self.${3:uom_field})
+
+snippet subdate
+	fields.Date.subtract(${1:date_obj},days=${2:int})
+
+snippet subdatetime
+	fields.Datetime.subtract(${1:datetime_obj},hours=${2:int})
+
+snippet nameget
+	def name_get(self):
+		res = []
+		for line in self:
+			res.append((line.id,line.name))
+
+		return res
+snippet nestedloop
+	[${4:item_of_child} for ${2:item_of_parent} in ${1:list_obj} for $4 in $2.$3]
+
+snippet ocreate
+	@api.model
+	def create(self,vals):
+		res = super(${1:class_name},self).create(vals)
+		return res
+
+snippet owrite
+	@api.model
+	def write(self,vals):
+		res = super(${1:class_name},self).write(vals)
+		return res
+	
+snippet ounlink
+	@api.model
+	def unlink(self):
+		res = super(${1:class_name},self).unlink()
+		return res
+
+snippet oconstraint
+	@api.contraint('${1:field_name}')
+	def check_$1(self):
+		pass
+
+snippet name_search
+	@api.model
+	def name_search(self,name,args=None,operator='ilike',limit=100):
+		res_search = False
+		res = self.search(['|',('name',operator,name)] + args, limit=limit)
+		res_search = res.name_get()
+		return res_search
+	
+snippet default_get
+	@api.model
+	def default_get(self,fields):
+		res =  super(${1:class_name},self).default_get(fields)
+		return res
+
+snippet actionview
+	def action_view_${1:model_name}(self):
+		${2:action_var} = self.env.ref('${3:folder_name}.${4:action_name}').sudo().read()[0]
+		$2['domain'] = [('${5:field_name}','${6:operator}',${7:ids})]
+		$2[context] = {}
+		return $2
+		
+

@@ -1,0 +1,243 @@
+{
+
+	"qweb span": {
+		"scope": "xml",
+		"prefix": "span",
+		"body": [
+			"<span t-esc=\"$1\"/>"
+		],
+		"description": "qweb span"
+	},
+	"qweb strong": {
+		"scope": "xml",
+		"prefix": "strong",
+		"body": [
+			"<strong>",
+            "\t$1",
+            "<strong/>"
+		],
+		"description": "qweb strong"
+	},
+	"qweb h2": {
+		"scope": "xml",
+		"prefix": "h2",
+		"body": [
+			"<h2>",
+            "\t$1",
+            "<h2/>"
+		],
+		"description": "qweb h2"
+	},
+	"qweb h3": {
+		"scope": "xml",
+		"prefix": "h3",
+		"body": [
+			"<h3>",
+            "\t$1",
+            "<h3/>"
+		],
+		"description": "qweb h3"
+	},
+	"qweb h4": {
+		"scope": "xml",
+		"prefix": "h4",
+		"body": [
+			"<h4>",
+            "\t$1",
+            "<h4/>"
+		],
+		"description": "qweb h4"
+	},
+	"qweb h5": {
+		"scope": "xml",
+		"prefix": "h5",
+		"body": [
+			"<h5>",
+            "\t$1",
+            "<h5/>"
+		],
+		"description": "qweb h5"
+	},
+	"qweb h6": {
+		"scope": "xml",
+		"prefix": "h6",
+		"body": [
+			"<h6>",
+            "\t$1",
+            "<h6/>"
+		],
+		"description": "qweb h6"
+	},
+	"qweb oe_structure": {
+		"scope": "xml",
+		"prefix": "oe_structure",
+		"body": [
+			"<div class=\"oe_structure\">",
+            "\t$1",
+            "<div/>"
+		],
+		"description": "qweb oe_structure"
+	},
+	"qweb mt-8": {
+		"scope": "xml",
+		"prefix": "mt-8",
+		"body": [
+			"<div class=\"mt-8\">",
+            "\t$1",
+            "<div/>"
+		],
+		"description": "qweb mt-8"
+	},
+	"qweb mt-12": {
+		"scope": "xml",
+		"prefix": "mt-12",
+		"body": [
+			"<div class=\"mt-12\">",
+            "\t$1",
+            "<div/>"
+		],
+		"description": "qweb mt-12"
+	},
+	"qweb mt-16": {
+		"scope": "xml",
+		"prefix": "mt-16",
+		"body": [
+			"<div class=\"mt-16\">",
+            "\t$1",
+            "<div/>"
+		],
+		"description": "qweb mt-16"
+	},
+	"qweb mt-24": {
+		"scope": "xml",
+		"prefix": "mt-24",
+		"body": [
+			"<div class=\"mt-24\">",
+            "\t$1",
+            "<div/>"
+		],
+		"description": "qweb mt-24"
+	},
+	"qweb mt-32": {
+		"scope": "xml",
+		"prefix": "mt-32",
+		"body": [
+			"<div class=\"mt-32\">",
+            "\t$1",
+            "<div/>"
+		],
+		"description": "qweb mt-32"
+	},
+	"qweb mb-8": {
+		"scope": "xml",
+		"prefix": "mb-8",
+		"body": [
+			"<div class=\"mb-8\">",
+            "\t$1",
+            "<div/>"
+		],
+		"description": "qweb mb-8"
+	},
+	"qweb mb-12": {
+		"scope": "xml",
+		"prefix": "mb-12",
+		"body": [
+			"<div class=\"mb-12\">",
+            "\t$1",
+            "<div/>"
+		],
+		"description": "qweb mb-12"
+	},
+	"qweb mb-16": {
+		"scope": "xml",
+		"prefix": "mb-16",
+		"body": [
+			"<div class=\"mb-16\">",
+            "\t$1",
+            "<div/>"
+		],
+		"description": "qweb mb-16"
+	},
+	"qweb mb-24": {
+		"scope": "xml",
+		"prefix": "mb-24",
+		"body": [
+			"<div class=\"mb-24\">",
+            "\t$1",
+            "<div/>"
+		],
+		"description": "qweb mb-24"
+	},
+	"qweb mb-32": {
+		"scope": "xml",
+		"prefix": "mb-32",
+		"body": [
+			"<div class=\"mb-32\">",
+            "\t$1",
+            "<div/>"
+		],
+		"description": "qweb mb-32"
+	},
+	"qweb text-left": {
+		"scope": "xml",
+		"prefix": "text-left",
+		"body": [
+			"<div class=\"text-left\">",
+            "\t$1",
+            "<div/>"
+		],
+		"description": "qweb text-left"
+	},
+	"qweb text-right": {
+		"scope": "xml",
+		"prefix": "text-right",
+		"body": [
+			"<div class=\"text-right\">",
+            "\t$1",
+            "<div/>"
+		],
+		"description": "qweb text-left"
+	},
+	"qweb text-center": {
+		"scope": "xml",
+		"prefix": "text-center",
+		"body": [
+			"<div class=\"text-center\">",
+            "\t$1",
+            "<div/>"
+		],
+		"description": "qweb text-center"
+	},
+	"qweb clearfix": {
+		"scope": "xml",
+		"prefix": "clearfix",
+		"body": [
+			"<div class=\"clearfix\">",
+            "\t$1",
+            "<div/>"
+		],
+		"description": "qweb clearfix"
+	},
+	"qweb justifiy-center": {
+		"scope": "xml",
+		"prefix": "justifiy-center",
+		"body": [
+			"<div class=\"justifiy-center\">",
+            "\t$1",
+            "<div/>"
+		],
+		"description": "qweb justifiy-center"
+	},
+	"qweb external-layout": {
+		"scope": "xml",
+		"prefix": "external-layout",
+		"body": [
+			"<t t-call=\"external-layout\">",
+            "\t$1",
+            "<t/>"
+		],
+		"description": "qweb external-layout"
+	}
+
+
+}

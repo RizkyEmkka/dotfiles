@@ -1,0 +1,11 @@
+{
+
+	"qweb span": {
+		"scope": "xml",
+		"prefix": "span",
+		"body": [
+			"<span t-esc=\"$1\"/>",
+		],
+		"description": "qweb span"
+	}
+}

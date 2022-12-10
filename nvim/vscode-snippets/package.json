@@ -1,0 +1,21 @@
+{
+	"name": "odoo14-snippets",
+	"contributes": {
+		"snippets": [
+			{
+				"language": [
+					"all",
+                    "python",
+                    "javascript"
+				],
+				"path": "./snippets/odoo14.json"
+			},
+			{
+				"language": [
+					"xml"
+				],
+				"path": "./snippets/odoo14xml.json"
+			}
+		]
+	}
+}

@@ -1,0 +1,1184 @@
+{
+  "author": {
+    "prefix": "author",
+    "body": [
+      "####################################################################################",
+      "### _* coding: utf8 *_                    ",
+      "###                 __    __            ",
+      "###   ____   _____ |  | _|  | _______   ",
+      "### _/ __ \\ /     \\|  |/ /  |/ /\\__  \\",
+      "### \\  ___/|  Y Y  \\    <|    <  / __ \\_",
+      "###  \\___  >__|_|  /__|_ \\__|_ \\(____  /",
+      "###      \\/      \\/     \\/    \\/     \\/ ",
+      "###",
+      "###    @Majalaya $CURRENT_YEAR-$CURRENT_MONTH-$CURRENT_DATE $CURRENT_HOUR:$CURRENT_MINUTE:$CURRENT_SECOND",
+      "###",
+      "###",
+      "###",
+      "###",
+      "###",
+      "####################################################################################",
+
+    ]
+  },
+
+  "odoo flex":{
+
+    "prefix": "odoo flex",
+    "body": [
+      " <label for=\"${1:field_name}\" string=\"${2:label}\" />",
+      "<div class=\"o_row no-gutters d-flex \" >",
+      "\t<field name=\"${1:field_name}\" class=\"oe_inline text-left\" />",
+      "\t<label for=\"${3:field_name}\" string=\"${4:label}\" class=\"oe_inline\" />",
+      "\t<field name=\"${3:field_name}\" />",
+      "</div>"
+
+    ],
+    "scope": "xml"
+  },
+  "odoo field name with no option":{
+
+    "prefix": "odoo field with no option",
+    "body": [
+      "<field name=\"${3:field_name}\" options=\"{'no_open': True, 'no_create': True}\" />",
+    ],
+    "scope": "xml"
+  },
+
+  "odoo field name with sum":{
+    "prefix": "odoo field with sum",
+    "body": [
+      "<field name=\"${3:field_name}\" sum=\"Total\"/>",
+    ],
+    "scope": "xml"
+  },
+
+  "odoo widget radio horizontal":{
+    "prefix": "odoo widget radio horizontal",
+    "body": [
+      "<field name=\"${3:field_name}\" widget=\"radio\" option=\"{horizontal:True}\"/>",
+    ],
+    "scope": "xml"
+  },
+
+  "odoo widget radio":{
+    "prefix": "odoo widget radio",
+    "body": [
+      "<field name=\"${3:field_name}\" widget=\"radio\"/>",
+    ],
+    "scope": "xml"
+  },
+
+  "odoo widget url":{
+    "prefix": "odoo widget url",
+    "body": [
+      "<field name=\"${3:field_name}\" widget=\"url\"/>",
+    ],
+    "scope": "xml"
+  },
+
+  "odoo widget image url":{
+    "prefix": "odoo widget image url",
+    "body": [
+      "<field name=\"${3:field_name}\" widget=\"image_url\" class=\"oe_avatar\"/>",
+    ],
+    "scope": "xml"
+  },
+
+  "odoo widget image":{
+    "prefix": "odoo widget image",
+    "body": [
+      "<field name=\"${3:field_name}\" widget=\"image\" class=\"float-left oe_avatar\"/>",
+    ],
+    "scope": "xml"
+  },
+
+  "odoo widget phone":{
+    "prefix": "odoo widget phone",
+    "body": [
+      "<field name=\"${3:field_name}\" widget=\"phone\"/>",
+    ],
+    "scope": "xml"
+  },
+
+  "odoo widget toggle button":{
+    "prefix": "odoo widget toggle button",
+    "body": [
+      "<field name=\"${3:field_name}\" widget=\"toggle_button\"/>",
+    ],
+    "scope": "xml"
+  },
+  "odoo widget html":{
+    "prefix": "odoo widget html",
+    "body": [
+      "<field name=\"${3:field_name}\" widget=\"html\"/>",
+    ],
+    "scope": "xml"
+  },
+
+  "odoo widget relative time":{
+    "prefix": "odoo widget relative time",
+    "body": [
+      "<field name=\"${3:field_name}\" widget=\"relative_time\"/>",
+    ],
+    "scope": "xml"
+  },
+  "odoo widget float time":{
+    "prefix": "odoo widget float time",
+    "body": [
+      "<field name=\"${3:field_name}\" widget=\"float_time\"/>",
+    ],
+    "scope": "xml"
+  },
+
+  "odoo widget many2one avatar user":{
+    "prefix": "odoo widget m2o avatar user",
+    "body": [
+      "<field name=\"${3:field_name}\" widget=\"many2one_avatar_user\"/>",
+    ],
+    "scope": "xml"
+  },
+  
+  "odoo widget badge":{
+    "prefix": "odoo widget badge",
+    "body": [
+      "<field name=\"${3:field_name}\" widget=\"badge\"/>",
+    ],
+    "scope": "xml"
+  },
+
+  "odoo widget priority":{
+    "prefix": "odoo widget priority",
+    "body": [
+      "<field name=\"${3:field_name}\" widget=\"priority\"/>",
+    ],
+    "scope": "xml"
+  },
+
+  "odoo widget ace":{
+    "prefix": "odoo widget ace",
+    "body": [
+      "<field name=\"${3:field_name}\" widget=\"ace\"/>",
+    ],
+    "scope": "xml"
+  },
+
+  "odoo widget progress bar":{
+    "prefix": "odoo widget progress bar",
+    "body": [
+      "<field name=\"${3:field_name}\" widget=\"progressbar\"/>",
+    ],
+    "scope": "xml"
+  },
+
+  "odoo widget email":{
+    "prefix": "odoo widget email",
+    "body": [
+      "<field name=\"${3:field_name}\" widget=\"email\"/>",
+    ],
+    "scope": "xml"
+  },
+
+  "odoo widget domain":{
+    "prefix": "odoo widget domain",
+    "body": [
+      "<field name=\"domain\" widget=\"domain\" options=\"{'model':'model_id'}\"/>",
+    ],
+    "scope": "xml"
+  },
+
+  "odoo widget boolean toggle":{
+    "prefix": "odoo widget boolean toggle",
+    "body": [
+      "<field name=\"${3:field_name}\" widget=\"boolean_toggle\"/>",
+    ],
+    "scope": "xml"
+  },
+
+  "odoo widget date":{
+    "prefix": "odoo widget date",
+    "body": [
+      "<field name=\"${3:field_name}\" widget=\"date\"/>",
+    ],
+    "scope": "xml"
+  },
+
+  "odoo widget one2many list":{
+    "prefix": "odoo widget one2many list",
+    "body": [
+      "<field name=\"${3:field_name}\" widget=\"one2many_list\"/>",
+    ],
+    "scope": "xml"
+  },
+
+  "odoo widget boolean favorite":{
+    "prefix": "odoo widget boolean favorite",
+    "body": [
+      "<field name=\"${3:field_name}\" widget=\"boolean_favorite\"/>",
+    ],
+    "scope": "xml"
+  },
+
+  "odoo widget statusbar":{
+    "prefix": "odoo widget statusbar",
+    "body": [
+      "<field name=\"state\" widget=\"statusbar\"/>",
+    ],
+    "scope": "xml"
+  },
+
+  "odoo widget statusbar visibility":{
+    "prefix": "odoo widget statusbar",
+    "body": [
+      "<field name=\"state\" widget=\"statusbar\" statusbar_visible=\"open,confirm,done\"/>",
+    ],
+    "scope": "xml"
+  },
+
+  "odoo widget many2one barcode":{
+    "prefix": "odoo widget many2one barcode",
+    "body": [
+      "<field name=\"${1:field_name}\" widget=\"many2one_barcode\"/>",
+    ],
+    "scope": "xml"
+  },
+
+  "odoo widget handle":{
+    "prefix": "odoo widget handle",
+    "body": [
+      "<field name=\"sequence\" widget=\"handle\"/>",
+    ],
+    "scope": "xml"
+  },
+
+  "odoo widget section and note text":{
+    "prefix": "odoo widget section and note",
+    "body": [
+      "<field name=\"name\" widget=\"section_and_note_text\"/>",
+    ],
+    "scope": "xml"
+  },
+
+  "odoo widget stat info":{
+    "prefix": "odoo widget stat info",
+    "body": [
+      "<field name=\"${1:field_name}\" widget=\"statinfo\"/>",
+    ],
+    "scope": "xml"
+  },
+  "odoo widget payment":{
+    "prefix": "odoo widget payment",
+    "body": [
+      "<field name=\"name\" widget=\"payment\"/>",
+    ],
+    "scope": "xml"
+  },
+
+  "odoo widget monetary list":{
+    "prefix": "odoo widget monetary",
+    "body": [
+      "<field name=\"currency_id\" invisible=\"1\" />",
+      "<field name=\"${3:field_name}\" widget=\"monetary\"  options=\"{'currency_field': 'currency_id'}\"/>",
+    ],
+    "scope": "xml"
+  },
+
+  
+
+
+
+
+  "comment": {
+    "prefix": "odoo comment",
+    "body": [
+      "########################################################################",
+      "### ",
+      "### ${1:message}",
+      "### ",
+      "########################################################################"
+    ],
+
+    "scope": "python"
+  },
+
+  "odoo filter": {
+    "prefix": "odoo filter ids",
+    "body": "filtered(lambda x:x.${1:field_condition})",
+    "scope": "python"
+  },
+
+  "odoo domain with lambda": {
+    "prefix": "odoo domain with lambda",
+    "body": "domain=lambda self:self._${1:method_name}()",
+    "scope": "python"
+  },
+
+  "odoo default with lambda": {
+    "prefix": "odoo default with lambda",
+    "body": "default=lambda self:self._${1:method_name}()",
+    "scope": "python"
+  },
+
+  "odoo related m2o field": {
+    "prefix": "odoo related m2o field",
+    "body": "${1:field_name_id} = fields.Many2one(related='${2:parent_id}.${1:field_name_id}', string='${3}')",
+    "scope": "python"
+  },
+
+  "odoo related char field": {
+    "prefix": "odoo related char field",
+    "body": "${1:field_name_id} = fields.Char(related='${2:parent_id}.${1:field_name_id}', string='${3}')",
+    "scope": "python"
+  },
+
+  "odoo related bool field": {
+    "prefix": "odoo related bool field",
+    "body": "${1:field_name_id} = fields.Boolean(related='${2:parent_id}.${1:field_name_id}', string='${3}')",
+    "scope": "python"
+  },
+
+  "odoo related int field": {
+    "prefix": "odoo related int field",
+    "body": "${1:field_name_id} = fields.Integer(related='${2:parent_id}.${1:field_name_id}', string='${3}')",
+    "scope": "python"
+  },
+  "odoo related float field": {
+    "prefix": "odoo related float field",
+    "body": "${1:field_name_id} = fields.Float(related='${2:parent_id}.${1:field_name_id}', string='${3}')",
+    "scope": "python"
+  },
+
+  "odoo sorted": {
+    "prefix": "odoo sorted ids",
+    "body": "sorted(lambda x:-x.${1:field_order})",
+    "scope": "python"
+  },
+
+  "odoo inherit res config": {
+    "prefix": "odoo inherit res config",
+    "body": [
+      "from odoo import api, fields, models, _",
+      "from odoo.exceptions import UserError, ValidationError",
+      "from ast import literal_eval",
+      "import logging",
+      "_logger = logging.getLogger(__name__)",
+      "\n",
+      "\n",
+      "class ResConfigSettings(models.TransientModel):",
+      "\t_inherit = 'res.config.settings'",
+      "\n",
+      "\n",
+      "\tname_sequence_id = fields.Many2one('ir.sequence', string='Sequence')",
+      "\n",
+      "\t@api.model",
+      "\tdef get_values(self):",
+      "\t\tres = super(ResConfigSettings, self).get_values()",
+      "\t\tir_config = self.env['ir.config_parameter'].sudo()",
+      "\t\tname_sequence_id  = ir_config.get_param('name_sequence_id')",
+      "\n",
+      "\t\tres.update(tname_sequence_id=int(name_sequence_id))",
+      "\n",
+      "\t\treturn res",
+      "\n",
+      "\tdef set_values(self):",
+      "\t\tsuper(ResConfigSettings, self).set_values()",
+      "\t\tir_config = self.env['ir.config_parameter'].sudo()",
+      "\t\tir_config.set_param(\"name_sequence_id\", self.name_sequence_id.id)"
+    ],
+    "scope": "python"
+  },
+
+  "odoo check qty is null": {
+    "prefix": "odoo check qty",
+    "body": [
+      "precision_digits = self.env['decimal.precision'].precision_get('Product Unit of Measure')",
+      "for line in self.line_ids:",
+      "\tif float_is_zero(line.quantity,precision_digits=precision_digits):",
+      "\t\traise UserError('Mohon maaf pastikan %s quantity tidak nol'%(line.product_id.name))"
+    ],
+    "scope": "python"
+  },
+
+  "odoo import float utils": {
+    "prefix": "odoo import float utils",
+    "body": [
+      "from odoo.tools.float_utils import float_round, float_is_zero,float_compare,float_split_str,float_repr"
+    ],
+    "scope": "python"
+  },
+
+  "odoo import literal eval": {
+    "prefix": "odoo import literal eval",
+    "body": "from ast import literal_eval",
+    "scope": "python"
+  },
+
+  "odoo get config parameter": {
+    "prefix": "odoo get config parameter",
+    "body": [
+      "ir_config   = self.env['ir.config_parameter'].sudo()",
+      "${1:params_name} = ir_config.get_param('${1:params_name}')"
+    ],
+    "scope": "python"
+  },
+
+  "odoo sequence next by code": {
+    "prefix": "odoo next sequence by code",
+    "body": "name = self.env['ir.sequence'].next_by_code('${1:name_folder}.${2:sequence_id}')",
+    "scope": "python"
+  },
+  "odoo sequence next by id": {
+    "prefix": "odoo next sequence by id",
+    "body": [
+      "sequence_id = sequence_id",
+      "name = self.env['ir.sequence'].browse(sequence_id).next_by_id()"
+    ],
+    "scope": "python"
+  },
+
+  "odoo new model": {
+    "prefix": "odoo new model",
+    "body": [
+      "from odoo import models, fields, api, _",
+      "from odoo.exceptions import UserError",
+      "import logging",
+      "_logger = logging.getLogger(__name__)",
+      "\n",
+      "\n",
+      "class ${1:ModelName}(models.Model):",
+      "\t_name = '${2:name_model}'",
+      "\t_inherit = ['mail.thread', 'mail.activity.mixin']",
+      "\t_description = '${3:Description}'",
+      "\n",
+      "\tname = fields.Char(string='${4:label field}')"
+    ]
+  },
+
+  "odoo new wizard": {
+    "prefix": "odoo new wizard",
+    "body": [
+      "from odoo import models, fields, api, _",
+      "from odoo.exceptions import UserError",
+      "import logging",
+      "_logger = logging.getLogger(__name__)",
+      "\n",
+      "\n",
+      "class ${1:ModelName}Wizard(models.TransientModel):",
+      "\t_name = '${2:name_model}'",
+      "\t_description = '${3:Description}'",
+      "\n",
+      "\treport_id = fields.Many2one('${5:model_name}',string='${6:label field}')"
+    ]
+  },
+
+  "has group": {
+    "prefix": "odoo has group",
+    "body": "self.env.user.has_group('${1:folder_name}.${2:group_name}')",
+    "description": "Check Group",
+    "scope": "python"
+  },
+
+  "read group": {
+    "prefix": "odoo read group",
+    "body": [
+      "self.env['${1:model_name}'].read_group([('${2:field_name}', '${3:operator}',${4:domain})], ['${5:group_by}'], ['${6:field_wanna_display}'])"
+    ],
+    "description": "Read group by orm",
+    "scope": "python"
+  },
+
+  "report calculate": {
+    "prefix": "odoo report calculate",
+    "body": [
+      "from odoo import models, fields, api, _",
+      "from odoo.exceptions import UserError",
+      "import logging",
+      "_logger = logging.getLogger(__name__)",
+      "\n\n",
+      "class Report${1:reportname}(models.Model):",
+      "\t_name        = '${2:name}.${3:model}'",
+      "\t_description = '${4:description}'",
+      "\n",
+      "\tname = fields.Char(string='${5:report_name}')",
+      "\tline_ids = fields.One2many('${2:name}.${3:model}.line', 'report_id', string='Report detail')",
+      "\n\n",
+      "\tdef action_clear(self):",
+      "\t\tquery = \"\"\"",
+      "\t\t\t\tDELETE FROM ${2:name}_${3:model}_line WHERE report_id = '$s';",
+      "\t\t\t\t\"\"\"%(self.id)",
+      "\t\tself._cr.execute(query)",
+      "\n",
+      "\tdef action_calcute(self):",
+      "\t\tself.action_clear()",
+      "\t\t'DO STUFF'",
+      "\n\n\n\n",
+      "class Report${1:reportname}Line(models.Model):",
+      "\t_name        = '${2:name}.${3:model}.line'",
+      "\t_description = '${8:description}'",
+      "\n\n",
+      "\tname = fields.Char(string='${5:report_name} Line')",
+      "\treport_id = fields.Many2one('${2:name}.${3:model}', string='${5:report_name}')"
+    ],
+    "scope": "python"
+  },
+
+  "to date": {
+    "prefix": "odoo str to date",
+    "body": ["fields.Date.to_date(${1:str})"],
+    "scope": "python",
+    "description": "String to Object Date"
+  },
+
+  "to datetime": {
+    "prefix": "odoo str to datetime",
+    "body": ["fields.Datetime.to_datetime(${1:str})"],
+    "scope": "python",
+
+    "description": "String to Object Datetime"
+  },
+
+  "add date": {
+    "prefix": "odoo add date",
+    "body": ["fields.Date.add(${1:dateobj},months=${2:int})"],
+    "scope": "python"
+  },
+
+  "odoo depends context": {
+    "prefix": "odoo depends context",
+    "body": ["@api.depends_context('${1:field_name}')"],
+    "scope": "python"
+  },
+
+  "odoo origin": {
+    "prefix": "odoo origin",
+    "body": ["self._origin.${1:field_name}"],
+    "scope": "python"
+  },
+  "odoo return": {
+    "prefix": "odoo return",
+    "body": [
+      "@model",
+      "@returns('res.partner')",
+      "def find_partner(self, arg):"
+    ],
+    "scope": "python"
+  },
+
+  "odoo create multi": {
+    "prefix": "odoo create multi",
+    "body": ["@model_create_multi"],
+    "scope": "python"
+  },
+
+  "add datetime": {
+    "prefix": "odoo add datetime",
+    "body": ["fields.Datetime.add(${1:datetimeobj},hours=${2:int})"],
+    "scope": "python"
+  },
+
+  "round": {
+    "prefix": "odoo round",
+    "body": [
+      "fields.Float.round(self.product_uom_qty, precision_rounding=self.product_uom_id.rounding)"
+    ],
+    "scope": "python"
+  },
+
+  "is zero": {
+    "prefix": "odoo is zero",
+    "body": [
+      "fields.Float.is_zero(self.product_uom_qty, precision_rounding=self.product_uom_id.rounding)"
+    ],
+    "scope": "python"
+  },
+
+  "compare": {
+    "prefix": "odoo float compare",
+    "body": [
+      "field.Float.compare(self.product_uom_qty, self.qty_done, precision_rounding=self.product_uom_id.rounding)"
+    ],
+    "scope": "python"
+  },
+
+  "subtract date": {
+    "prefix": "odoo subtract date",
+    "body": ["fields.Date.subtract(${1:dateobj},days=${2:int})"],
+    "scope": "python"
+  },
+
+  "subtract datetime": {
+    "prefix": "odoo subtract datetime",
+    "body": ["fields.Datetime.subtract(${1:datetimeobj},hours=${2:int})"],
+    "scope": "python"
+  },
+
+  "logging warning": {
+    "prefix": "odoo log warning",
+    "body": [
+      "_logger.warning('='*40)",
+      "_logger.warning(${1:print})",
+      "_logger.warning('='*40)"
+    ],
+    "scope": "python"
+  },
+
+  "query select": {
+    "prefix": "odoo query select",
+    "body": [
+      "table = ${1:table}",
+      "columns = [${2:columns}]",
+      "query = \"\"\" ",
+      "\t\tSELECT %s FROM %s WHERE %s",
+      "\t\t\"\"\"%(columns,table,$3)",
+      "self._cr.execute(query)",
+      "results = self._cr.dictfetchall()"
+    ],
+    "scope": "python"
+  },
+
+  "query insert": {
+    "prefix": "odoo query insert",
+    "body": [
+      "table = ${1:table}",
+      "columns = [${2:columns}]",
+      "query = \"\"\" ",
+      "\t\tINSERT %s %s VALUES %s WHERE %s RETURNING id'",
+      "\t\t\"\"\"%(table,tuple(columns),$3)",
+      "self._cr.execute(query)",
+      "results = self._cr.dictfetchall()"
+    ],
+    "scope": "python"
+  },
+
+  "odoo resp": {
+    "prefix": "odoo http response",
+    "body": [
+      "response = {",
+      "\"success\":True,",
+      "\"message\":${1:message},",
+      "\"data\":{},",
+      "}"
+    ],
+    "scope": "python"
+  },
+
+  "logging": {
+    "prefix": "odoo log",
+    "body": [
+      "import logging;",
+      "_logger = logging.getLogger(__name__)",
+      "_logger.warning('='*40)",
+      "_logger.warning('MESSAGE')",
+      "_logger.warning(${1:message})",
+      "_logger.warning('='*40)"
+    ],
+    "description": "Logging to console",
+    "scope": "python"
+  },
+
+  "create record": {
+    "prefix": "odoo orm create",
+    "body": [
+      "$1 = self.env[\"${2|stock.picking,stock.move,stock.production.lot,account.move,account.move.line,stock.move.line,purchase.order,purchase.order.line|}\"].create({})"
+    ],
+    "scope": "python"
+  },
+
+  "nested loop one liner": {
+    "prefix": "odoo nested loop one line",
+    "body": "[${4:item of child } for ${2:item_parent} in ${1:parent_object}  for ${4} in ${2:item_parent}.${3:child_object}]",
+    "scope": "python"
+  },
+
+  "else in for loop": {
+    "prefix": "odoo loop with else",
+    "body": [
+      "for x in range(6):",
+      "\tprint(x)",
+      "else:",
+      "\tprint('Finally finished')"
+    ],
+    "scope": "python"
+  },
+
+  "name get": {
+    "prefix": "odoo name get",
+    "body": [
+      "def name_get(self):",
+      "\tres = []",
+      "\tfor $1 in self:",
+      "\t\tres.append(($2,$3))",
+      "\treturn res"
+    ],
+    "scope": "python"
+  },
+
+  "odoo create": {
+    "prefix": "odoo create",
+    "body": [
+      "\t@api.model",
+      "\tdef create(self,values):",
+      "\t\t #add code here",
+      "\t\t return super(${1:ClassName},self).create(values)"
+    ],
+    "scope": "python"
+  },
+
+  "odoo write": {
+    "prefix": "odoo write",
+    "body": [
+      "\t@api.model",
+      "\tdef write(self,values):",
+      "\t\t #add code here",
+      "\t\t return super(${1:ClassName},self).write(values)"
+    ],
+    "scope": "python"
+  },
+
+  "odoo unlink": {
+    "prefix": "odoo unlink",
+    "body": [
+      "\t@api.model",
+      "\tdef unlink(self,values):",
+      "\t\t #add code here",
+      "\t\t return super(${1:ClassName},self).unlink(values)"
+    ],
+    "scope": "python"
+  },
+
+  "odoo constraint": {
+    "prefix": "odoo constraint",
+    "body": [
+      "\t@api.constrains('field_name')",
+      "\tdef check_field_name(self):",
+      "\t\tfor record in self:",
+      "\t\t\tif record.qty > 0",
+      "\t\t\t\traise ValidationError(${1:error})"
+    ],
+    "scope": "python"
+  },
+
+  "odoo test module": {
+    "prefix": "odoo unit test",
+    "body": [
+      "from odoo.tests.common import TransactionCase",
+      "class TestModuleName(TransactionCase):\n",
+      "\tdef setup(self):",
+      "\t\tsuper(TestModuleName,self).setup()"
+    ],
+    "scope": "python"
+  },
+
+  "name search": {
+    "prefix": "odoo name search",
+    "body": [
+      "@api.model",
+      "def name_search(self, name, args=None, operator='ilike', limit=100):",
+      "\tres_search = False",
+      "\tres = self.search(['|',('name',operator,name)] + args, limit=limit)",
+      "\tres_search = res.name_get()",
+      "\treturn res_search"
+    ],
+    "scope": "python"
+  },
+
+  "default get": {
+    "prefix": "odoo default get",
+    "body": [
+      "@api.model",
+      "def default_get(self,fields):",
+      "\tres = super(${1:class},self).default_get(fields)",
+      "\treturn res"
+    ],
+    "scope": "python"
+  },
+
+  "action view": {
+    "prefix": "odoo action view",
+    "body": [
+      "def action_view_${1:model}(self):",
+      "\taction = self.env.ref('${2:addons}.${3:action_name}').read()[0]",
+      "\taction['domain'] = [('${4:field_name}','${5:operator}',${6:ids})]",
+      "\taction['context'] = {}",
+      "\treturn action"
+    ],
+    "scope": "python"
+  },
+
+  "odoo cron": {
+    "prefix": "odoo cron",
+    "body": [
+      "<record id=\"${1:model_name}_ir_cron\" forcecreate=\"True\" model=\"ir.cron\">",
+      "\t<field name=\"name\">${1:model_name}</field>",
+      "\t<field name=\"user_id\" ref=\"base.user_root\"/>",
+      "\t<field name=\"doall\" eval=\"False\"/>",
+      "\t<field name=\"active\" eval=\"True\"/>",
+      "\t<field name=\"interval_number\">1</field>",
+      "\t<field name=\"interval_type\">minutes</field>",
+      "\t<field name=\"numbercall\">1</field>",
+      "\t<field name=\"model_id\" ref=\"model_${1:model_name}\"/>",
+      "\t<field name=\"state\">code</field>",
+      "\t<field name=\"code\">model.method_name()</field>",
+      "</record>"
+    ],
+    "scope": "xml"
+  },
+
+  "odoo t-set": {
+    "prefix": "odoo t-set",
+    "body": ["<t t-set=\"var_name\" t-value=\"value\"/>"],
+    "scope": "xml"
+  },
+
+  "odoo form": {
+    "prefix": "odoo form",
+    "body": [
+      "<record id=\"${1:model_name}_view_form\" model=\"ir.ui.view\">",
+      "\t<field name=\"name\">${1:model_name}.view.form</field>",
+      "\t<field name=\"model\">${1:model_name}</field>",
+      "\t<field name=\"arch\" type=\"xml\">",
+      "\t\t<form>",
+      "\t\t\t<sheet>",
+      "\t\t\t\t<group>",
+      "\t\t\t\t\t<group>",
+      "\t\t\t\t\t\t<field name=\"${2:field_name}\"/>",
+      "\t\t\t\t\t</group>",
+      "\t\t\t\t\t<group>",
+      "\t\t\t\t\t\t<field name=\"${3:field_name}\"/>",
+      "\t\t\t\t\t</group>",
+      "\t\t\t\t</group>",
+      "\t\t\t</sheet>",
+      "\t\t</form>",
+      "\t</field>",
+      "</record>"
+    ],
+    "scope": "xml"
+  },
+
+  "odoo record rule": {
+    "prefix": "odoo record rule",
+    "body": [
+      "<record id=\"${1:name}\" model=\"ir.rule\">",
+      "\t<field name=\"name\">${2:rule_name}</field>",
+      "\t<field name=\"model_id\" ref=\"${3:folder_name}.${4:model}}\"/>",
+      "\t<field name=\"groups\" eval=\"[(4, ref('${3:folder_name}.${5:group}}'))]\"/>",
+      "\t<field name=\"perm_read\" eval=\"1\"/>",
+      "\t<field name=\"perm_write\" eval=\"1\"/>",
+      "\t<field name=\"perm_create\" eval=\"1\"/>",
+      "\t<field name=\"perm_unlink\" eval=\"1\"/>",
+      "\t<field name=\"domain_force\">[('state','=','cancel')]</field>",
+      "</record>"
+    ],
+    "scope": "xml"
+  },
+
+  "odoo action server": {
+    "prefix": "odoo action server",
+    "body": [
+      "<record id=\"${1:name}\" model=\"ir.actions.server\">",
+      "\t<field name=\"name\">${2:action_name}</field>",
+      "\t<field name=\"type\">ir.actions.act_window</field>",
+      "\t<field name=\"binding_model_id\" ref=\"${3:folder_name}.${4:model}}\"/>",
+      "\t<field name=\"model_id\" ref=\"${3:folder_name}.${4:model}}\"/>",
+      "\t<field name=\"groups\" eval=\"[(4, ref('${3:folder_name}.${5:group}}'))]\"/>",
+      "\t<field name=\"state\">code</field>",
+      "\t<field name=\"code\">if records: records.${6:method_name}</field>",
+      "</record>"
+    ],
+    "scope": "xml"
+  },
+
+  "odoo qweb if else": {
+    "prefix": "odoo qweb if else",
+    "body": [
+      "<t t-if=\"${1:condition}\">",
+      "\n",
+      "</t>",
+      "<t t-else=\"\">",
+      "\n",
+      "</t>"
+    ],
+    "scope": "xml"
+  },
+
+  "odoo ir actions client": {
+    "prefix": "odoo ir actions client",
+    "body": [
+      "<record id=\"${1:action_id}\" model=\"ir.actions.client\">",
+      "\t<field name=\"name\">${2:action_name}</field>",
+      "\t<field name=\"tag\">${3:action_tag_registry}</field>",
+      "\t<field name=\"target\">fullscreen</field>",
+      "</record>"
+    ],
+    "scope": "xml"
+  },
+
+  "odoo template  widget view": {
+    "prefix": "odoo template widget view",
+    "body": [
+      "<?xml version=\"1.0\" encoding=\"UTF-8\"?>",
+      "<templates xml:space=\"preserve\">",
+      "\t\t <t t-name=\"${1:template_menu}\">",
+      "\t\t </t>",
+      "</templates>"
+    ],
+    "scope": "xml"
+  },
+
+  "odoo inherit asset backend": {
+    "prefix": "odoo inherit asset backend",
+    "body": [
+      "<?xml version=\"1.0\" encoding=\"UTF-8\"?>",
+      "<odoo>",
+      "<data>",
+      "\t<template id=\"${1:asset_id}\" name=\"${2:asset_name}\" inherit_id=\"web.assets_backend\">",
+      "\t\t<xpath expr=\".\" position=\"inside\">",
+      "\t\t</xpath>",
+      "\t</template>",
+      "</data>",
+      "</odoo>"
+    ],
+    "scope": "xml"
+  },
+
+  "odoo load source js": {
+    "prefix": "odoo load source js",
+    "body": [
+      " <script type=\"text/javascript\" src=\"/${1:folder_name}/static/src/js/${2:filename}.js\"></script>"
+    ],
+    "scope": "xml"
+  },
+
+  "odoo load source css": {
+    "prefix": "odoo load source css",
+    "body": [
+      " <link rel=\"stylesheet\" type=\"text/css\" href=\"/${1:folder_name}/static/src/css/${2:filename}.css\"></link>"
+    ],
+    "scope": "xml"
+  },
+
+  "odoo load source scss": {
+    "prefix": "odoo load source scss",
+    "body": [
+      " <link rel=\"stylesheet\" type=\"text/scss\" href=\"/${1:folder_name}/static/src/scss/${2:filename}.scss\"></link>"
+    ],
+    "scope": "xml"
+  },
+
+  "odoo post": {
+    "prefix": "odoo http post",
+    "body": [
+      "@http.route('/api/${1:endpoint}', type='http', method='POST', auth='user', cors='*', csrf=False, save_session=False)",
+      "def ${2:funtion_name}(self,**kwargs):",
+      "\t${3:code here}",
+      "\t\n",
+      "\treturn  http.Response(json.dumps(response_content,default=str), status=200,mimetype='application/json')"
+    ],
+    "scope": "python"
+  },
+
+  "odoo get": {
+    "prefix": "odoo http get",
+    "body": [
+      "@http.route('/api/${1:endpoint}', type='http', method='GET', auth='user', cors='*', csrf=False, save_session=False)",
+      "def ${2:funtion_name}(self,**kwargs):",
+      "\t${3:code here}",
+      "\t\n",
+      "\treturn  http.Response(json.dumps(response_content,default=str), status=200,mimetype='application/json')"
+    ],
+    "scope": "python"
+  },
+
+  "odoo put": {
+    "prefix": "odoo http put",
+    "body": [
+      "@http.route('/api/${1:endpoint}', type='http', method='PUT', auth='user', cors='*', csrf=False, save_session=False)",
+      "def ${2:funtion_name}(self,**kwargs):",
+      "\t${3:code here}",
+      "\t\n",
+      "\treturn  http.Response(json.dumps(response_content,default=str), status=200,mimetype='application/json')"
+    ],
+    "scope": "python"
+  },
+
+  "odoo delete": {
+    "prefix": "odoo http delete",
+    "body": [
+      "@http.route('/api/${1:endpoint}', type='http', method='DELETE', auth='user', cors='*', csrf=False, save_session=False)",
+      "def ${2:funtion_name}(self,**kwargs):",
+      "\t${3:code here}",
+      "\t\n",
+      "\treturn  http.Response(json.dumps(response_content,default=str), status=200,mimetype='application/json')"
+    ],
+    "scope": "python"
+  },
+
+  "odoo tree": {
+    "prefix": "odoo tree",
+    "body": [
+      "<record id=\"${1:model_name}_view_tree\" model=\"ir.ui.view\">",
+      "\t<field name=\"name\">${1:model_name}.view.tree</field>",
+      "\t<field name=\"model\">${1:model_name}</field>",
+      "\t<field name=\"arch\" type=\"xml\">",
+      "\t\t<tree string=\"\">\n\n",
+      "\t\t</tree>",
+      "\t</field>",
+      "</record>"
+    ],
+    "scope": "xml"
+  },
+
+  "odoo kanban": {
+    "prefix": "odoo kanban",
+    "body": [
+      "<record id=\"${1:model_name}_view_kanban\" model=\"ir.ui.view\">",
+      "\t<field name=\"name\">${1:model_name}.view.kanban</field>",
+      "\t<field name=\"model\">${1:model_name}</field>",
+      "\t<field name=\"arch\" type=\"xml\">",
+      "\t\t<kanban string=\"\">\n\n",
+      "\t\t</kanban>",
+      "\t</field>",
+      "</record>"
+    ],
+    "scope": "xml"
+  },
+
+  "odoo calender": {
+    "prefix": "odoo calender",
+    "body": [
+      "<record id=\"${1:model_name}_view_calender\" model=\"ir.ui.view\">",
+      "\t<field name=\"name\">${1:model_name}.view.calender</field>",
+      "\t<field name=\"model\">${1:model_name}</field>",
+      "\t<field name=\"arch\" type=\"xml\">",
+      "\t\t<calender string=\"\" date_start=\"${2:datestart}\" mode=\"${3:month}\">\n\n",
+      "\t\t</calender>",
+      "\t</field>",
+      "</record>"
+    ],
+    "scope": "xml"
+  },
+
+  "odoo button box": {
+    "prefix": "odoo button box",
+    "body": [
+      "<div class=\"oe_button_box\" name=\"model_name_button_box\">",
+      "\t<button name=\"action_toggle_active\"",
+      "\t\t\ttype=\"object\"",
+      "\t\t\tconfirm=\"(Un)archiving a project automatically (un)archives its tasks and issues. Do you want to proceed?\"",
+      "\t\t\tclass=\"oe_stat_button\"",
+      "\t\t\ticon=\"fa-archive\">",
+      "\t\t\t<field name=\"active\" widget=\"boolean_button\" options='{\"terminology\": \"archive\"}'/>",
+      "\t</button>",
+      "</div>"
+    ],
+    "scope": "xml"
+  },
+
+  "odoo abstract action": {
+    "prefix": "odoo abstract action",
+    "body": [
+      "odoo.define('${1:folder_name}.${2:action_name}', function (require) {",
+      "\"use strict\";",
+      "\n",
+      "let AbstractAction = require('web.AbstractAction');",
+      "let core           = require('web.core');",
+      "let Dialog         = require('web.Dialog');",
+      "let Session        = require('web.session');",
+      "\n",
+      "let _t = core._t;",
+      "\n",
+      "let ${2:action_name} =  AbstractAction.extend({",
+      "contentTemplate: '${3:template}',",
+      "  events: {",
+      "\n\n",
+      "}\n,",
+      "init: function(parent, action) {",
+      "\tthis._super.apply(this, arguments);",
+      "},\n",
+      "willStart: function() {",
+      "\tlet self = this;",
+      "\treturn this._super.apply(this, arguments);",
+      "},\n",
+      "start: function() {",
+      "\tlet self = this;",
+      "\treturn this._super();",
+      "},\n",
+      "destroy: function() {",
+      "\tlet self = this;",
+      "\tthis._super();",
+      "},\n",
+      "});\n\n",
+      "core.action_registry.add('${4:registy_name}', ${2:action_name});",
+      "\n",
+      "return {${2:action_name}: ${2:action_name}}",
+      "});"
+    ],
+    "scope": "javascript"
+  },
+
+  "odoo widget": {
+    "prefix": "odoo widget",
+    "body": [
+      "odoo.define('${1:folder_name}.${2:widgetName}', function (require) {",
+      "\"use strict\";",
+      "\n",
+      "let Widget = require('web.Widget');",
+      "\n",
+      "let _t = core._t;",
+      "\n",
+      "let ${2:widgetName} =  Widget.extend({",
+      "'template': '${3:template}',",
+      "  events: {",
+      "\n\n",
+      "}\n,",
+      "init: function(parent) {",
+      "\tthis._super.apply(this, arguments);",
+      "\tthis.title = parent.title;",
+      "},\n",
+      "willStart: function() {",
+      "\tlet self = this;",
+      "\treturn this._super.apply(this, arguments);",
+      "},\n",
+      "start: function() {",
+      "\tlet self = this;",
+      "\treturn this._super();",
+      "},\n",
+      "destroy: function() {",
+      "\tlet self = this;",
+      "\tthis._super();",
+      "},\n",
+      "});\n\n",
+      "\n",
+      "return ${2:widgetName}",
+      "});"
+    ],
+    "scope": "javascript"
+  },
+
+  "odoo owl widget": {
+    "prefix": "odoo owl widget",
+    "body": [
+      "odoo.define('${1:folder_name}.${2:widgetName}', function (require) {",
+      "\"use strict\";",
+      "\n",
+      "const { Component,UseState} = owl;",
+      "\n",
+      "const {loadCSS} = require(\"web.ajax\");",
+      "\n",
+      "class ${2:widgetName} extends Component {",
+      "constructor() {",
+      "\tsuper(...arguments)",
+      "}",
+      "async willStart() {",
+      "}",
+      "mounted() {",
+      "}",
+      "}",
+      "${2:widgetName}.template = ${3:template_name}",
+      "\n",
+      "$return ${2:widgetName}",
+      "});"
+    ],
+    "scope": "javascript"
+  }
+}
